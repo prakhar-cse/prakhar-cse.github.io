@@ -1,2 +1,2 @@
-# prakharcsegbu.github.io
+# prakhar-csegbu.github.io
 website development
