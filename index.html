@@ -1,127 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>prakharcsegbu</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prakhar Rastogi - Portfolio</title>
 
-  <!-- CSS  -->
-  
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-       
+  <!-- Google Icons + Font -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- 
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #F4F6F8, #ECEFF1);
+      color: #263238;
+    }
+    nav {
+      background-color: #3949AB;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    #index-banner {
+      background: linear-gradient(135deg, #5C6BC0, #3949AB);
+      color: white;
+      padding: 60px 0;
+    }
+    #index-banner h1, #index-banner h5 {
+      color: white;
+    }
+    .icon-block {
+      transition: transform 0.3s ease;
+    }
+    .icon-block:hover {
+      transform: scale(1.05);
+    }
+    .icon-block i {
+      color: #5C6BC0;
+    }
+    .btn-large {
+      background-color: #FFB74D !important;
+      color: #263238;
+      transition: background 0.3s ease;
+    }
+    .btn-large:hover {
+      background-color: #FFA726 !important;
+    }
+    footer {
+      margin-top: 50px;
+      background-color: #3949AB;
+    }
+    footer a.white-text:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
+
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Welcome</a>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="nav-wrapper container">
+      <a href="#" class="brand-logo">&lt;/&gt; Welcome</a>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Home</a></li>
+        <li><a href="https://www.linkedin.com/in/prakharcsegbu/">LinkedIn</a></li>
       </ul>
-
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Home</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">PRAKHAR RASTOGI</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">B.Teach(CSE) + M.Tech(AIR) </h5>
-      </div>
-      <div class="row center">
-        <a href="https://www.linkedin.com/in/prakharcsegbu/" id="download-button" class="btn-large waves-effect waves-light orange">Connect </a>
-      </div>
-      <br><br>
 
+  <!-- Mobile Nav -->
+  <ul class="sidenav" id="nav-mobile">
+    <li><a href="#">Home</a></li>
+    <li><a href="https://www.linkedin.com/in/prakharcsegbu/">LinkedIn</a></li>
+  </ul>
+
+  <!-- Banner -->
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container center">
+      <h1 class="header">PRAKHAR RASTOGI</h1>
+      <h4 class="light">Software Engineer</h4>
+      <h5 class="light">B.Tech (CSE) + M.Tech (AIR)</h5>
+      <br>
+      <a href="https://www.linkedin.com/in/prakharcsegbu/" class="btn-large waves-effect waves-light">Connect on LinkedIn</a>
     </div>
   </div>
 
-
+  <!-- Highlights Section -->
   <div class="container">
     <div class="section">
-
-      <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          <div class="icon-block center">
+            <i class="material-icons large">flash_on</i>
+            <h5>Fast Development</h5>
+            <p>Leverages Material Design principles for consistent and efficient UI development.</p>
           </div>
         </div>
-
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          <div class="icon-block center">
+            <i class="material-icons large">group</i>
+            <h5>User-Centric Design</h5>
+            <p>Components and animations are optimized for delightful and intuitive user experiences.</p>
           </div>
         </div>
-
         <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          <div class="icon-block center">
+            <i class="material-icons large">settings</i>
+            <h5>Developer Friendly</h5>
+            <p>Comes with comprehensive documentation and clean, modular code samples for faster adoption.</p>
           </div>
         </div>
       </div>
-
     </div>
-    <br><br>
   </div>
 
-  <footer class="page-footer orange">
+  <!-- Footer -->
+  <footer class="page-footer">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
+          <h5 class="white-text">About</h5>
+          <p class="grey-text text-lighten-4">I'm a tech enthusiast focused on AI and software development. Connect with me to collaborate or learn more!</p>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h5 class="white-text">Links</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="#">Projects</a></li>
+            <li><a class="white-text" href="#">Blog</a></li>
+            <li><a class="white-text" href="#">Resume</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="https://www.linkedin.com/in/prakharcsegbu/">LinkedIn</a></li>
+            <li><a class="white-text" href="#">GitHub</a></li>
+            <li><a class="white-text" href="#">Email</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        © 2025 Prakhar Rastogi | Made with ❤️ using Materialize
       </div>
     </div>
   </footer>
 
+  <!-- JS Scripts -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const elems = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(elems);
+    });
+  </script>
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
- 
-
-  </body>
+</body>
 </html>
